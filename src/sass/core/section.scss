@@ -1,0 +1,47 @@
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #fff;
+
+    &_face {
+        background-image: url("../media/section/face.jpg");
+        background-position: ceter bottom;
+        background-size: cover;
+    }
+}
+
+.section__title {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1310px) {
+    .section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .section__title {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .section__title {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section__title {
+        font-size: 30px;
+    }
+}

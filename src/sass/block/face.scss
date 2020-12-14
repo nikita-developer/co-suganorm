@@ -1,0 +1,170 @@
+
+.face__logo {
+    width: 100%;
+    text-align: center;
+
+    & img {
+        display: inline-block;
+    }
+}
+
+.face__body {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.face__box {
+    flex: 1 0 50%;
+}
+
+.face__title {
+    max-width: 425px;
+    margin-bottom: 30px;
+    font-size: 44px;
+    text-transform: uppercase;
+
+    & mark {
+        display: block;
+        color: #82d061;
+    }
+}
+
+.face__list {
+    max-width: 300px;
+}
+
+.face__item {
+    position: relative;
+    padding: 15px 15px 15px 68px;
+    font-size: 19px;
+    color: #fff;
+    background-color: rgb(24, 24, 24);
+    background-image: linear-gradient(27deg, rgba(24, 24, 24, 1) 0%, rgba(73, 73, 73, 1) 100%);
+
+    & span {
+        display: block;
+    }
+
+    & img {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+
+    & + & {
+        margin-top: 10px;
+    }
+}
+
+.face__product {
+    position: absolute;
+    bottom: -110px;
+    left: 50%;
+    z-index: 5;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 1310px) {
+    .face__title {
+        font-size: 34px;
+    }
+
+    .face__product {
+        bottom: -30px;
+        max-width: 200px;
+        margin-left: -15px;
+    }
+
+    .face__item {
+        font-size: 18px;
+    }
+
+    .face__logo {
+        margin-bottom: 30px;
+    }
+
+    .face__list {
+        max-width: 240px;
+    }
+}
+
+@media (max-width: 768px) {
+    .face__body {
+        flex-direction: column;
+    }
+
+    .face__box {
+        flex: 0 0 100%;
+    }
+
+    .face__title {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .face__product {
+        position: static;
+        width: 50%;
+        margin-top: 0;
+        transform: translateX(0);
+    }
+
+    .face__box_first {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    .face__item {
+        padding-left: 55px;
+        font-size: 16px;
+
+        & img {
+            max-width: 30px;
+        }
+    }
+
+    .face__list {
+        width: calc(100% - 220px);
+    }
+}
+
+@media (max-width: 480px) {
+    .face__item {
+        padding: 10px 10px 10px 45px;
+        font-size: 14px;
+
+        & img {
+            left: 10px;
+            max-width: 25px;
+        }
+
+        & span {
+            display: inline;
+        }
+    }
+
+    .face__list {
+        width: 60%;
+    }
+
+    .face__product {
+        width: 35%;
+    }
+}
+
+@media (max-width: 370px) {
+    .face__item {
+        padding: 10px 10px 10px 35px;
+        font-size: 14px;
+
+        & img {
+            left: 7px;
+            max-width: 20px;
+        }
+    }
+}
