@@ -10,10 +10,16 @@
         background-position: center bottom;
         background-size: cover;
     }
+
+    &_causes {
+        background-image: url("../media/section/causes.jpg");
+        background-position: center;
+        background-size: cover;
+    }
 }
 
 .section__title {
-    font-size: 56px;
+    font-size: 63px;
     font-weight: 800;
     line-height: 1;
     text-transform: uppercase;
@@ -27,6 +33,10 @@
         &_face {
             padding-top: 20px;
         }
+
+        &_causes {
+            background-image: url("../media/section/causes-1310.jpg");
+        }
     }
 
     .section__title {
@@ -38,6 +48,11 @@
     .section {
         padding-top: 40px;
         padding-bottom: 40px;
+
+        &_causes {
+            padding-bottom: 230px;
+            background-image: url("../media/section/causes-480.jpg");
+        }
     }
 
     .section__title {
