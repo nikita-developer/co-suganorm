@@ -24,3 +24,9 @@
         max-width: 100%;
     }
 }
+
+@media (min-width: 320px) {
+    .container_fluid {
+        max-width: 100% !important;
+    }
+}
