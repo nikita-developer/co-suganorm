@@ -5,8 +5,9 @@
     background-color: #fff;
 
     &_face {
+        padding-top: 40px;
         background-image: url("../media/section/face.jpg");
-        background-position: ceter bottom;
+        background-position: center bottom;
         background-size: cover;
     }
 }
@@ -22,6 +23,10 @@
     .section {
         padding-top: 60px;
         padding-bottom: 60px;
+
+        &_face {
+            padding-top: 20px;
+        }
     }
 
     .section__title {
