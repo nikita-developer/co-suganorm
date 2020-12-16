@@ -1,0 +1,116 @@
+
+.symptoms__title {
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.symptoms__body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -38px;
+}
+
+.symptoms__item {
+    display: flex;
+    flex: 0 0 253px;
+    align-items: flex-end;
+    max-width: 253px;
+    height: 380px;
+    padding: 30px;
+    margin-right: 19px;
+    margin-bottom: 38px;
+    margin-left: 19px;
+    background-position: center bottom;
+    background-size: cover;
+    box-shadow: 0 0 25px 0 #a5a5a5;
+
+    &:nth-child(1) {
+        background-image: url("../media/symptoms/img-1.jpg");
+    }
+
+    &:nth-child(2) {
+        background-image: url("../media/symptoms/img-2.jpg");
+    }
+
+    &:nth-child(3) {
+        background-image: url("../media/symptoms/img-3.jpg");
+    }
+
+    &:nth-child(4) {
+        background-image: url("../media/symptoms/img-4.jpg");
+    }
+
+    &:nth-child(5) {
+        background-image: url("../media/symptoms/img-5.jpg");
+    }
+
+    &:nth-child(6) {
+        background-image: url("../media/symptoms/img-6.jpg");
+    }
+
+    &:nth-child(7) {
+        background-image: url("../media/symptoms/img-7.jpg");
+    }
+
+    &:nth-child(8) {
+        background-image: url("../media/symptoms/img-8.jpg");
+    }
+
+    &:nth-child(9) {
+        background-image: url("../media/symptoms/img-9.jpg");
+    }
+
+    &:nth-child(10) {
+        background-image: url("../media/symptoms/img-10.jpg");
+    }
+
+    &:nth-child(11) {
+        background-image: url("../media/symptoms/img-11.jpg");
+    }
+}
+
+.symptoms__info {
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff;
+}
+
+@media (max-width: 1310px) {
+    .symptoms__item {
+        padding: 15px;
+        margin: 0 7.5px 15px;
+    }
+
+    .symptoms__body {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 565px) {
+    .symptoms__body {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .symptoms__item {
+        flex-basis: 50%;
+        max-width: 50%;
+        height: 330px;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+
+        &:last-child {
+            flex-basis: 100%;
+            max-width: 100%;
+            background-image: url("../media/symptoms/img-11-565.jpg");
+            background-position: center;
+        }
+    }
+
+    .symptoms__info {
+        font-size: 16px;
+    }
+}
