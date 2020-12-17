@@ -1,0 +1,154 @@
+
+.professional {
+    position: relative;
+}
+
+.professional__title {
+    margin-bottom: 20px;
+    font-size: 52px;
+    color: #fff;
+
+    & span {
+        display: block;
+    }
+}
+
+.professional__body {
+    padding: 45px;
+    background-color: #fff;
+
+    p {
+        max-width: 730px;
+        font-weight: 400;
+
+        & mark {
+            font-size: 24px;
+            color: #d32a40;
+        }
+
+        & + p {
+            margin-top: 20px;
+        }
+    }
+}
+
+.professional__footer {
+    display: flex;
+    align-items: center;
+    max-width: 620px;
+    padding: 30px 45px;
+}
+
+.professional__name {
+    margin-right: 30px;
+    font-size: 21px;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+
+    & span {
+        display: block;
+    }
+}
+
+.professional__job {
+    margin-right: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+
+    & span {
+        display: block;
+    }
+}
+
+.professional__media {
+    position: absolute;
+    right: -295px;
+    bottom: -120px;
+}
+
+@media (max-width: 1310px) {
+    .professional__media {
+        bottom: -60px;
+        max-width: 600px;
+    }
+
+    .professional__body {
+        & p {
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(5) {
+                max-width: 500px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .professional__media {
+        right: -105px;
+        bottom: -40px;
+        max-width: 300px;
+    }
+
+    .professional__body {
+        padding: 15px;
+
+        & p {
+            &:nth-child(5) {
+                max-width: 340px;
+            }
+        }
+    }
+
+    .professional__footer {
+        flex-wrap: wrap;
+        max-width: 320px;
+        padding: 15px;
+    }
+
+    .professional__name {
+        margin-right: 0;
+        margin-bottom: 5px;
+
+        & span {
+            display: inline;
+        }
+    }
+
+    .professional__job {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .professional__media {
+        right: -100px;
+        max-width: 230px;
+    }
+
+    .professional__body {
+        padding-bottom: 50px;
+
+        & p {
+            & mark {
+                font-size: 18px;
+            }
+
+            &:nth-child(5) {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .professional__name {
+        font-size: 18px;
+    }
+
+    .professional__footer {
+        max-width: 220px;
+    }
+}
