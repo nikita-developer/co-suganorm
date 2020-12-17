@@ -23,8 +23,10 @@
     }
 
     &_symptoms {
+        margin-top: 30px;
         background-color: #24292d;
         background-image: url("../media/warning/bg-symptoms.jpg");
+        transform: translateY(0);
     }
 }
 
