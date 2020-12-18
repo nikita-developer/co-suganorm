@@ -45,9 +45,9 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 85px 50px 50px;
-    margin: 60px 0 20px;
-    border: 3px solid #75ba8e;
+    padding: 85px 35px 50px;
+    margin: 60px 0 0;
+    background-color: #eaeaea;
 }
 
 .commits__face {
@@ -58,7 +58,7 @@
     height: 120px;
     overflow: hidden;
     background-color: #e96771;
-    border: 3px solid #75ba8e;
+    border: 5px solid #fff;
     border-radius: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -67,21 +67,22 @@
 
 .commits__name {
     margin-bottom: 20px;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 700;
-    color: #75ba8e;
+    color: #000;
     text-align: center;
-    text-transform: uppercase;
-}
 
-.commits__name span {
-    display: block;
+    & span {
+        display: block;
+        margin-top: 5px;
+        font-size: 14px;
+    }
 }
 
 .commits__description {
     width: 100%;
     margin-bottom: 20px;
-    line-height: 21px;
+    line-height: 22px;
 }
 
 .commits__star {

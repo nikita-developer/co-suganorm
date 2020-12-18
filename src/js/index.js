@@ -50,8 +50,8 @@ $(document).ready(function () {
 
     $('.js-commits__box').owlCarousel({
         loop: true,
-        margin: 40,
         autoHeight: true,
+        margin: 40,
         responsive : {
             320 : {
                 items: 1
