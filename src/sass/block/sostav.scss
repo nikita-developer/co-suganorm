@@ -6,6 +6,7 @@
 }
 
 .sostav__title {
+    margin-bottom: 50px;
     font-size: 47px;
     text-align: center;
 
@@ -17,12 +18,12 @@
 .sostav__list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -210px;
+    margin-top: -70px;
 }
 
 .sostav__item {
     display: flex;
-    flex: 0 0 50%;
+    flex: 0 0 33.333%;
     margin-top: 70px;
 }
 
@@ -38,34 +39,9 @@
     margin-left: auto;
 }
 
-.sostav__item-box_full {
-    flex-direction: row;
-    width: calc(100% - 30px);
-}
-
-.sostav__item-box_fullLeft {
-    justify-content: flex-start;
-    text-align: left;
-
-    & .sostav__media {
-        margin-right: 20px;
-        margin-bottom: 0;
-    }
-}
-
-.sostav__item-box_fullRight {
-    justify-content: flex-end;
-    text-align: right;
-
-    & .sostav__media {
-        order: 2;
-        margin-bottom: 0;
-        margin-left: 20px;
-    }
-
-    & .sostav__info {
-        order: 1;
-    }
+.sostav__item-box_center {
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .sostav__media {

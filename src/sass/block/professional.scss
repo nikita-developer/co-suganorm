@@ -36,7 +36,7 @@
     display: flex;
     align-items: center;
     max-width: 620px;
-    padding: 30px 45px;
+    padding: 30px 45px 0;
 }
 
 .professional__name {
@@ -106,7 +106,7 @@
     .professional__footer {
         flex-wrap: wrap;
         max-width: 320px;
-        padding: 15px;
+        padding: 15px 15px 0;
     }
 
     .professional__name {

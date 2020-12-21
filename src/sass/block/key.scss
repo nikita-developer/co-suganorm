@@ -53,7 +53,6 @@
     left: -280px;
     font-weight: 800;
     text-align: right;
-    text-decoration: underline;
     text-transform: uppercase;
 
     & span {
@@ -161,7 +160,18 @@
     }
 
     .key__product-info {
-        font-size: 9px;
+        font-size: 14px;
         line-height: 1.4;
+    }
+}
+
+@media (max-width: 374px) {
+    .key__product {
+        max-width: 150px;
+    }
+
+    .key__product-info {
+        left: 160px;
+        font-size: 12px;
     }
 }
