@@ -52,6 +52,10 @@
         background-position: center;
         background-size: cover;
     }
+
+    &_commits {
+        padding-top: 0;
+    }
 }
 
 .section__title {
@@ -77,6 +81,14 @@
         &_statistics {
             background-image: url("../media/section/statistics-1310.jpg");
         }
+
+        &_key {
+            padding-top: 0;
+        }
+
+        &_commits {
+            padding-top: 0;
+        }
     }
 
     .section__title {
@@ -90,8 +102,17 @@
         padding-bottom: 40px;
 
         &_causes {
+            padding-top: 0;
             padding-bottom: 230px;
             background-image: url("../media/section/causes-480.jpg");
+        }
+
+        &_key {
+            padding-top: 0;
+        }
+
+        &_commits {
+            padding-top: 0;
         }
     }
 
